@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="floatingMenuPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+           minWidth="-Infinity" prefHeight="789.0" prefWidth="1536.0" xmlns="http://javafx.com/javafx/16"
+           xmlns:fx="http://javafx.com/fxml/1">
+   <ImageView fx:id="backgroundBlur" fitHeight="824.0" fitWidth="1536.0" opacity="0.8" pickOnBounds="true">
+      <Image url="@../images/graphicstuff/grey.png"/>
+   </ImageView>
+   <AnchorPane fx:id="scrollPane" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="559.0"
+               prefWidth="832.0">
+      <ImageView fx:id="scrollImage" fitHeight="559.0" fitWidth="832.0" pickOnBounds="true">
+         <Image url="@../images/graphicstuff/scrollMenu.png"/>
+      </ImageView>
+      <AnchorPane fx:id="paneOnScroll" layoutX="27.0" layoutY="69.0" prefHeight="399.0" prefWidth="768.0">
+         <Label fx:id="titleLabel" alignment="CENTER" layoutX="7.0" layoutY="65.0" prefHeight="34.0"
+                prefWidth="754.0"
+                textAlignment="CENTER">
+            <font>
+               <Font name="Algerian" size="20.0"/>
+            </font>
+         </Label>
+         <AnchorPane fx:id="paneFirstLeaderCard" layoutX="143.0" layoutY="126.0">
+            <ImageView fx:id="imageFirstLeaderCard" fitHeight="221.0" fitWidth="189.0" pickOnBounds="true"
+                       preserveRatio="true">
+
+            </ImageView>
+         </AnchorPane>
+         <AnchorPane fx:id="paneSecondLeaderCard" layoutX="455.0" layoutY="126.0">
+            <ImageView fx:id="imageSecondLeaderCard" fitHeight="221.0" fitWidth="189.0" pickOnBounds="true"
+                       preserveRatio="true">
+
+            </ImageView>
+         </AnchorPane>
+      </AnchorPane>
+   </AnchorPane>
+</StackPane>

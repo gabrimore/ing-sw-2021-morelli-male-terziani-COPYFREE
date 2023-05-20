@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="floatingMenuPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+           minWidth="-Infinity" prefHeight="789.0" prefWidth="1536.0" xmlns="http://javafx.com/javafx/16"
+           xmlns:fx="http://javafx.com/fxml/1">
+   <ImageView fx:id="backgroundBlur" fitHeight="824.0" fitWidth="1536.0" opacity="0.6" pickOnBounds="true">
+      <Image url="@../images/graphicstuff/grey.png"/>
+   </ImageView>
+   <ImageView fx:id="backgroundConfetti" fitHeight="824.0" fitWidth="1536.0" layoutX="10.0" layoutY="-8.0"
+              pickOnBounds="true">
+      <Image url="@../images/graphicstuff/winningConfetti.png"/>
+   </ImageView>
+   <AnchorPane fx:id="scrollPane" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="559.0"
+               prefWidth="832.0">
+      <ImageView fx:id="scrollImage" fitHeight="559.0" fitWidth="832.0" pickOnBounds="true">
+         <Image url="@../images/graphicstuff/scrollMenu.png"/>
+      </ImageView>
+      <AnchorPane fx:id="paneOnTheScroll" layoutX="41.0" layoutY="80.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                  minHeight="-Infinity" minWidth="-Infinity" prefHeight="386.0" prefWidth="746.0">
+         <VBox fx:id="vboxWinners" layoutX="108.0" layoutY="66.0" maxHeight="-Infinity" maxWidth="-Infinity"
+               minHeight="-Infinity" minWidth="-Infinity" prefHeight="254.0" prefWidth="530.0">
+
+            <Label fx:id="winnerLabel" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity"
+                   maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="68.0"
+                   prefWidth="530.0" textAlignment="CENTER"
+                   textFill="#ff9901">
+               <font>
+                  <Font name="Algerian" size="35.0"/>
+               </font>
+               <padding>
+                  <Insets top="5.0"/>
+               </padding>
+            </Label>
+
+            <Label fx:id="nameOfTheWinnerLabel" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity"
+                   maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="41.0"
+                   prefWidth="530.0" textAlignment="CENTER"
+                   textFill="#ff9901">
+               <font>
+                  <Font name="Algerian" size="35.0"/>
+               </font>
+            </Label>
+
+            <Label fx:id="infoRankingLabel" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity"
+                   maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="24.0"
+                   prefWidth="530.0" text="Ranking of the players:" underline="true">
+               <font>
+                  <Font name="Algerian" size="16.0"/>
+               </font>
+               <VBox.margin>
+                  <Insets top="30.0"/>
+               </VBox.margin>
+               <padding>
+                  <Insets left="80.0"/>
+               </padding>
+            </Label>
+            <HBox fx:id="hbox1Player" minWidth="-Infinity">
+               <Label fx:id="player1Label" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                      minWidth="-Infinity" prefHeight="27.0" prefWidth="350.0">
+                  <font>
+                     <Font name="Algerian" size="16.0"/>
+                  </font>
+                  <padding>
+                     <Insets left="90.0"/>
+                  </padding>
+               </Label>
+               <Label fx:id="pointPlayer1Label" maxHeight="-Infinity" maxWidth="-Infinity"
+                      minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="80.0">
+                  <font>
+                     <Font name="Algerian" size="16.0"/>
+                  </font>
+               </Label>
+            </HBox>
+            <HBox fx:id="hbox2Player">
+               <Label fx:id="player2Label" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                      minWidth="-Infinity" prefHeight="27.0" prefWidth="350.0">
+                  <font>
+                     <Font name="Algerian" size="16.0"/>
+                  </font>
+                  <padding>
+                     <Insets left="90.0"/>
+                  </padding>
+               </Label>
+               <Label fx:id="pointPlayer2Label" maxHeight="-Infinity" maxWidth="-Infinity"
+                      minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="80.0">
+                  <font>
+                     <Font name="Algerian" size="16.0"/>
+                  </font>
+               </Label>
+            </HBox>
+            <HBox fx:id="hbox3Player">
+               <Label fx:id="player3Label" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                      minWidth="-Infinity" prefHeight="27.0" prefWidth="350.0">
+                  <font>
+                     <Font name="Algerian" size="16.0"/>
+                  </font>
+                  <padding>
+                     <Insets left="90.0"/>
+                  </padding>
+               </Label>
+               <Label fx:id="pointPlayer3Label" maxHeight="-Infinity" maxWidth="-Infinity"
+                      minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="80.0">
+                  <font>
+                     <Font name="Algerian" size="16.0"/>
+                  </font>
+               </Label>
+            </HBox>
+            <HBox fx:id="hbox4Player">
+               <Label fx:id="player4Label" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                      minWidth="-Infinity" prefHeight="27.0" prefWidth="350.0">
+                  <font>
+                     <Font name="Algerian" size="16.0"/>
+                  </font>
+                  <padding>
+                     <Insets left="90.0"/>
+                  </padding>
+               </Label>
+               <Label fx:id="pointPlayer4Label" maxHeight="-Infinity" maxWidth="-Infinity"
+                      minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="80.0">
+                  <font>
+                     <Font name="Algerian" size="16.0"/>
+                  </font>
+               </Label>
+            </HBox>
+         </VBox>
+      </AnchorPane>
+   </AnchorPane>
+</StackPane>

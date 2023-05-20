@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="floatingMenuPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+           minWidth="-Infinity" prefHeight="789.0" prefWidth="1536.0" xmlns="http://javafx.com/javafx/16"
+           xmlns:fx="http://javafx.com/fxml/1">
+   <ImageView fx:id="backgroundBlur" fitHeight="824.0" fitWidth="1536.0" opacity="0.8" pickOnBounds="true">
+      <Image url="@../images/graphicstuff/grey.png"/>
+   </ImageView>
+   <AnchorPane fx:id="scrollPane" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="559.0"
+               prefWidth="832.0">
+      <ImageView fx:id="scrollImage" fitHeight="559.0" fitWidth="832.0" pickOnBounds="true">
+         <Image url="@../images/graphicstuff/scrollMenu.png"/>
+      </ImageView>
+      <AnchorPane fx:id="paneOnScroll" layoutX="27.0" layoutY="69.0" prefHeight="399.0" prefWidth="768.0">
+         <Label fx:id="titleLabel" alignment="CENTER" layoutX="7.0" layoutY="65.0" prefHeight="34.0"
+                prefWidth="754.0" text="choose a leader card and then take an action" textAlignment="CENTER">
+            <font>
+               <Font name="Algerian" size="20.0"/>
+            </font>
+         </Label>
+         <VBox fx:id="vboxFirst" layoutX="207.0" layoutY="99.0" maxHeight="-Infinity" maxWidth="-Infinity"
+               minHeight="-Infinity" minWidth="-Infinity" prefHeight="210.0" prefWidth="122.0">
+            <ImageView fx:id="imageFirstLeaderCard" fitHeight="181.0" fitWidth="122.0" pickOnBounds="true"
+                       preserveRatio="true">
+            </ImageView>
+            <CheckBox fx:id="firstCheckBox" alignment="CENTER" contentDisplay="RIGHT" maxHeight="-Infinity"
+                      maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false"
+                      opacity="0.7" prefHeight="29.0" prefWidth="122.0">
+               <VBox.margin>
+                  <Insets/>
+               </VBox.margin>
+               <padding>
+                  <Insets left="53.0"/>
+               </padding>
+            </CheckBox>
+         </VBox>
+         <VBox fx:id="vboxSecond" layoutX="431.0" layoutY="99.0" maxHeight="-Infinity" maxWidth="-Infinity"
+               minHeight="-Infinity" minWidth="-Infinity" prefHeight="210.0" prefWidth="122.0">
+            <ImageView fx:id="imageSecondLeaderCard" fitHeight="181.0" fitWidth="122.0" pickOnBounds="true"
+                       preserveRatio="true">
+            </ImageView>
+            <CheckBox fx:id="secondCheckBox" alignment="CENTER" contentDisplay="RIGHT" maxHeight="-Infinity"
+                      maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false"
+                      opacity="0.7" prefHeight="29.0" prefWidth="122.0">
+               <VBox.margin>
+                  <Insets/>
+               </VBox.margin>
+               <padding>
+                  <Insets left="53.0"/>
+               </padding>
+            </CheckBox>
+         </VBox>
+         <Button fx:id="activateButton" layoutX="110.0" layoutY="321.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                 minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" opacity="0.7"
+                 prefHeight="41.0" prefWidth="86.0" text="Activate" textFill="#ff9901">
+            <font>
+               <Font name="Algerian" size="13.0"/>
+            </font>
+         </Button>
+         <Label fx:id="cannotActivateLabel" layoutX="207.0" layoutY="345.0" prefHeight="14.0" prefWidth="251.0"
+                text="*choosen card Cannot be activated" textFill="RED">
+            <font>
+               <Font name="Algerian" size="13.0"/>
+            </font>
+         </Label>
+         <Button fx:id="discardButton" layoutX="567.0" layoutY="327.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                 minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" opacity="0.7"
+                 prefHeight="34.0" prefWidth="75.0" text="Discard" textFill="#ff9901">
+            <font>
+               <Font name="Algerian" size="13.0"/>
+            </font>
+         </Button>
+         <Button fx:id="goBackButton" layoutX="717.0" layoutY="17.0" mnemonicParsing="false" prefHeight="30.0"
+                 prefWidth="31.0" text="X" textFill="#ff9901">
+            <font>
+               <Font name="Algerian" size="12.0"/>
+            </font>
+         </Button>
+      </AnchorPane>
+   </AnchorPane>
+</StackPane>

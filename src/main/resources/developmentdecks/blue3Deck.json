@@ -1,0 +1,122 @@
+[
+  {
+    "cost": [
+      {
+        "type": "COIN",
+        "counter": 6
+      }
+    ],
+    "victoryPoint": 9,
+    "inputResources": [
+      {
+        "type": "SERVANT",
+        "counter": 2
+      }
+    ],
+    "outputResources": [
+      {
+        "type": "SHIELD",
+        "counter": 3
+      }
+    ],
+    "outputFaithPoint": 2,
+    "colorLevel": "BLUE3",
+    "state": false,
+    "imageURL": "/images/cards/developmentcards/developmentcard (35).png"
+  },
+  {
+    "cost": [
+      {
+        "type": "COIN",
+        "counter": 5
+      },
+      {
+        "type": "STONE",
+        "counter": 2
+      }
+    ],
+    "victoryPoint": 10,
+    "inputResources": [
+      {
+        "type": "COIN",
+        "counter": 1
+      },
+      {
+        "type": "SHIELD",
+        "counter": 1
+      }
+    ],
+    "outputResources": [
+      {
+        "type": "SERVANT",
+        "counter": 3
+      },
+      {
+        "type": "STONE",
+        "counter": 3
+      }
+    ],
+    "outputFaithPoint": 1,
+    "colorLevel": "BLUE3",
+    "state": false,
+    "imageURL": "/images/cards/developmentcards/developmentcard (39).png"
+  },
+  {
+    "cost": [
+      {
+        "type": "COIN",
+        "counter": 7
+      }
+    ],
+    "victoryPoint": 11,
+    "inputResources": [
+      {
+        "type": "STONE",
+        "counter": 1
+      }
+    ],
+    "outputResources": [
+      {
+        "type": "SHIELD",
+        "counter": 1
+      }
+    ],
+    "outputFaithPoint": 3,
+    "colorLevel": "BLUE3",
+    "state": false,
+    "imageURL": "/images/cards/developmentcards/developmentcard (43).png"
+  },
+  {
+    "cost": [
+      {
+        "type": "COIN",
+        "counter": 3
+      },
+      {
+        "type": "STONE",
+        "counter": 3
+      }
+    ],
+    "victoryPoint": 12,
+    "inputResources": [
+      {
+        "type": "SERVANT",
+        "counter": 1
+      }
+    ],
+    "outputResources": [
+      {
+        "type": "COIN",
+        "counter": 1
+      },
+      {
+        "type": "SHIELD",
+        "counter": 3
+      }
+    ],
+    "outputFaithPoint": 0,
+    "colorLevel": "BLUE3",
+    "state": false,
+    "imageURL": "/images/cards/developmentcards/developmentcard (47).png"
+  }
+]

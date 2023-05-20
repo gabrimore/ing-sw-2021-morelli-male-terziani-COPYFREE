@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="floatingMenuPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+           minWidth="-Infinity" prefHeight="789.0" prefWidth="1536.0" xmlns="http://javafx.com/javafx/16"
+           xmlns:fx="http://javafx.com/fxml/1">
+   <ImageView fx:id="backgroundBlur" fitHeight="824.0" fitWidth="1536.0" opacity="0.8" pickOnBounds="true">
+      <Image url="@../images/graphicstuff/grey.png"/>
+   </ImageView>
+   <AnchorPane fx:id="scrollPane" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="559.0"
+               prefWidth="832.0">
+      <ImageView fx:id="scrollImage" fitHeight="559.0" fitWidth="832.0" pickOnBounds="true">
+         <Image url="@../images/graphicstuff/scrollMenu.png"/>
+      </ImageView>
+      <AnchorPane fx:id="paneOnTheScroll" layoutX="41.0" layoutY="80.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                  minHeight="-Infinity" minWidth="-Infinity" prefHeight="386.0" prefWidth="746.0">
+         <Label fx:id="chooseRCLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="9.0" layoutY="42.0"
+                maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                prefHeight="48.0" prefWidth="726.0" text="The action of Lorenzo il Magnifico is:"
+                textAlignment="CENTER">
+            <font>
+               <Font name="Algerian" size="26.0"/>
+            </font>
+         </Label>
+
+         <Button fx:id="okButton" layoutX="321.0" layoutY="302.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                 minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" opacity="0.8"
+                 prefHeight="48.0" prefWidth="103.0" text="ok" textFill="#ff9901">
+            <font>
+               <Font name="Algerian" size="15.0"/>
+            </font>
+         </Button>
+
+         <ImageView fx:id="lorenzoIlMagnificoImage" fitHeight="108.0" fitWidth="114.0" layoutX="14.0"
+                    layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@../images/graphicstuff/lorenzoFace.png"/>
+         </ImageView>
+         <ImageView fx:id="tokenImg" fitHeight="168.0" fitWidth="170.0" layoutX="88.0" layoutY="140.0"
+                    pickOnBounds="true" preserveRatio="true">
+         </ImageView>
+         <Label fx:id="tokenText" layoutX="252.0" layoutY="188.0" prefHeight="70.0" prefWidth="450.0">
+            <font>
+               <Font name="Algerian" size="16.0"/>
+            </font>
+         </Label>
+      </AnchorPane>
+   </AnchorPane>
+</StackPane>

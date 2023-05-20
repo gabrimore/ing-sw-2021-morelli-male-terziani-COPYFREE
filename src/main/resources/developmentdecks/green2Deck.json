@@ -1,0 +1,109 @@
+[
+  {
+    "cost": [
+      {
+        "type": "SHIELD",
+        "counter": 4
+      }
+    ],
+    "victoryPoint": 5,
+    "inputResources": [
+      {
+        "type": "STONE",
+        "counter": 1
+      }
+    ],
+    "outputResources": [],
+    "outputFaithPoint": 2,
+    "colorLevel": "GREEN2",
+    "state": false,
+    "imageURL": "/images/cards/developmentcards/developmentcard (17).png"
+  },
+  {
+    "cost": [
+      {
+        "type": "SHIELD",
+        "counter": 3
+      },
+      {
+        "type": "SERVANT",
+        "counter": 2
+      }
+    ],
+    "victoryPoint": 6,
+    "inputResources": [
+      {
+        "type": "SHIELD",
+        "counter": 1
+      },
+      {
+        "type": "SERVANT",
+        "counter": 1
+      }
+    ],
+    "outputResources": [
+      {
+        "type": "STONE",
+        "counter": 3
+      }
+    ],
+    "outputFaithPoint": 0,
+    "colorLevel": "GREEN2",
+    "state": false,
+    "imageURL": "/images/cards/developmentcards/developmentcard (21).png"
+  },
+  {
+    "cost": [
+      {
+        "type": "SHIELD",
+        "counter": 5
+      }
+    ],
+    "victoryPoint": 7,
+    "inputResources": [
+      {
+        "type": "COIN",
+        "counter": 2
+      }
+    ],
+    "outputResources": [
+      {
+        "type": "STONE",
+        "counter": 2
+      }
+    ],
+    "outputFaithPoint": 2,
+    "colorLevel": "GREEN2",
+    "state": false,
+    "imageURL": "/images/cards/developmentcards/developmentcard (25).png"
+  },
+  {
+    "cost": [
+      {
+        "type": "SHIELD",
+        "counter": 3
+      },
+      {
+        "type": "COIN",
+        "counter": 3
+      }
+    ],
+    "victoryPoint": 8,
+    "inputResources": [
+      {
+        "type": "COIN",
+        "counter": 1
+      }
+    ],
+    "outputResources": [
+      {
+        "type": "SHIELD",
+        "counter": 2
+      }
+    ],
+    "outputFaithPoint": 1,
+    "colorLevel": "GREEN2",
+    "state": false,
+    "imageURL": "/images/cards/developmentcards/developmentcard (29).png"
+  }
+]

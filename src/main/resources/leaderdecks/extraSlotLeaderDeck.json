@@ -1,0 +1,58 @@
+[
+  {
+    "typeExtraResource": "STONE",
+    "victoryPoint": 3,
+    "requirement": {
+      "resourcesRequirement": [
+        {
+          "type": "COIN",
+          "counter": 5
+        }
+      ]
+    },
+    "state": false,
+    "imageURL": "/images/cards/leadercards/leader5.png"
+  },
+  {
+    "typeExtraResource": "SERVANT",
+    "victoryPoint": 3,
+    "requirement": {
+      "resourcesRequirement": [
+        {
+          "type": "STONE",
+          "counter": 5
+        }
+      ]
+    },
+    "state": false,
+    "imageURL": "/images/cards/leadercards/leader6.png"
+  },
+  {
+    "typeExtraResource": "SHIELD",
+    "victoryPoint": 3,
+    "requirement": {
+      "resourcesRequirement": [
+        {
+          "type": "SERVANT",
+          "counter": 5
+        }
+      ]
+    },
+    "state": false,
+    "imageURL": "/images/cards/leadercards/leader7.png"
+  },
+  {
+    "typeExtraResource": "COIN",
+    "victoryPoint": 3,
+    "requirement": {
+      "resourcesRequirement": [
+        {
+          "type": "SHIELD",
+          "counter": 5
+        }
+      ]
+    },
+    "state": false,
+    "imageURL": "/images/cards/leadercards/leader8.png"
+  }
+]

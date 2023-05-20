@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="floatingMenuPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+           minWidth="-Infinity" prefHeight="789.0" prefWidth="1536.0" xmlns="http://javafx.com/javafx/16"
+           xmlns:fx="http://javafx.com/fxml/1">
+   <ImageView fx:id="backgroundBlur" fitHeight="824.0" fitWidth="1536.0" opacity="0.8" pickOnBounds="true">
+      <Image url="@../images/graphicstuff/grey.png"/>
+   </ImageView>
+   <AnchorPane fx:id="scrollPane" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="559.0"
+               prefWidth="832.0">
+      <ImageView fx:id="scrollImage" fitHeight="559.0" fitWidth="832.0" pickOnBounds="true">
+         <Image url="@../images/graphicstuff/scrollMenu.png"/>
+      </ImageView>
+      <AnchorPane fx:id="paneOnTheScroll" layoutX="41.0" layoutY="80.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                  minHeight="-Infinity" minWidth="-Infinity" prefHeight="386.0" prefWidth="746.0">
+         <VBox layoutX="56.0" layoutY="39.0" prefHeight="316.0" prefWidth="624.0" spacing="10.0">
+            <Label fx:id="titleLabel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                   minWidth="-Infinity" prefHeight="50.0" prefWidth="626.0"
+                   text="choose the  production you want to do:" textAlignment="CENTER">
+               <font>
+                  <Font name="Algerian" size="25.0"/>
+               </font>
+            </Label>
+            <Button fx:id="devCardButton" mnemonicParsing="false" prefHeight="52.0" prefWidth="434.0"
+                    text="1. produce from development card" textFill="#ff9901">
+               <font>
+                  <Font name="Algerian" size="16.0"/>
+               </font>
+               <VBox.margin>
+                  <Insets left="80.0"/>
+               </VBox.margin>
+            </Button>
+            <Button fx:id="baseProdButton" layoutX="10.0" layoutY="282.0" mnemonicParsing="false"
+                    prefHeight="52.0" prefWidth="434.0" text="2. base production" textFill="#ff9901">
+               <font>
+                  <Font name="Algerian" size="16.0"/>
+               </font>
+               <VBox.margin>
+                  <Insets left="80.0"/>
+               </VBox.margin>
+            </Button>
+            <Button fx:id="leaderCardButton" layoutX="10.0" layoutY="291.0" mnemonicParsing="false"
+                    prefHeight="52.0" prefWidth="434.0" text="3. produce from leader card" textFill="#ff9901">
+               <font>
+                  <Font name="Algerian" size="16.0"/>
+               </font>
+               <VBox.margin>
+                  <Insets left="80.0"/>
+               </VBox.margin>
+            </Button>
+            <Button fx:id="endProductionButton" layoutX="10.0" layoutY="293.0" mnemonicParsing="false"
+                    prefHeight="52.0" prefWidth="434.0" text="4. end production turn" textFill="#ff9901">
+               <font>
+                  <Font name="Algerian" size="16.0"/>
+               </font>
+               <VBox.margin>
+                  <Insets left="80.0"/>
+               </VBox.margin>
+            </Button>
+         </VBox>
+         <AnchorPane fx:id="resourceProducedPane" layoutX="614.0" layoutY="108.0" maxHeight="-Infinity"
+                     maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="229.0"
+                     prefWidth="279.0">
+            <ImageView fx:id="resProducedScrollImage" fitHeight="230.0" fitWidth="262.0" layoutX="6.0"
+                       layoutY="5.0" pickOnBounds="true">
+               <Image url="@../images/graphicstuff/scrollMenu.png"/>
+            </ImageView>
+            <AnchorPane fx:id="paneOnTheProdResourceScroll" layoutX="18.0" layoutY="49.0" maxHeight="-Infinity"
+                        maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="138.0"
+                        prefWidth="246.0">
+               <VBox fx:id="producedResourcesVbox" prefHeight="135.0" prefWidth="246.0">
+                  <padding>
+                     <Insets left="35.0"/>
+                  </padding>
+                  <Label prefHeight="16.0" prefWidth="195.0" text="Produced resources:"
+                         textAlignment="CENTER">
+                     <font>
+                        <Font name="Algerian" size="14.0"/>
+                     </font>
+                     <padding>
+                        <Insets bottom="5.0"/>
+                     </padding>
+                  </Label>
+                  <HBox fx:id="firstProdHbox" prefHeight="25.0" prefWidth="182.0" spacing="65.0">
+                     <ImageView fx:id="coinProdImg" fitHeight="26.0" fitWidth="37.0"
+                                pickOnBounds="true" preserveRatio="true">
+                        <Image url="@../images/resourcesgame/coin.png"/>
+                     </ImageView>
+                     <Label fx:id="quantityCoinProdLabel" maxHeight="-Infinity" maxWidth="-Infinity"
+                            minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0"
+                            prefWidth="55.0" text="X 0">
+                        <font>
+                           <Font name="Algerian" size="25.0"/>
+                        </font>
+                     </Label>
+                  </HBox>
+                  <HBox fx:id="secondProdHbox" layoutX="10.0" layoutY="10.0" prefHeight="100.0"
+                        prefWidth="200.0" spacing="63.0">
+                     <ImageView fx:id="servantProdImage" fitHeight="29.0" fitWidth="37.0"
+                                pickOnBounds="true" preserveRatio="true">
+                        <Image url="@../images/resourcesgame/servant.png"/>
+                     </ImageView>
+                     <Label fx:id="quantityServantProdLabel" maxHeight="-Infinity"
+                            maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                            prefHeight="30.0" prefWidth="54.0" text="X 0">
+                        <font>
+                           <Font name="Algerian" size="25.0"/>
+                        </font>
+                     </Label>
+                  </HBox>
+                  <HBox fx:id="thirdProdHbox" layoutX="10.0" layoutY="10.0" prefHeight="100.0"
+                        prefWidth="200.0" spacing="70.0">
+                     <ImageView fx:id="shieldProdImg" fitHeight="31.0" fitWidth="31.0"
+                                pickOnBounds="true" preserveRatio="true">
+                        <Image url="@../images/resourcesgame/shield.png"/>
+                     </ImageView>
+                     <Label fx:id="quantityShieldProdLabel" maxHeight="-Infinity" maxWidth="-Infinity"
+                            minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0"
+                            prefWidth="58.0" text="X 0">
+                        <font>
+                           <Font name="Algerian" size="25.0"/>
+                        </font>
+                     </Label>
+                  </HBox>
+                  <HBox fx:id="fourthProdHbox" layoutX="10.0" layoutY="100.0" prefHeight="100.0"
+                        prefWidth="200.0" spacing="66.0">
+                     <ImageView fx:id="stoneProdImg" fitHeight="28.0" fitWidth="32.0"
+                                pickOnBounds="true" preserveRatio="true">
+                        <Image url="@../images/resourcesgame/stone.png"/>
+                     </ImageView>
+                     <Label fx:id="quantityStoneProdLabel" maxHeight="-Infinity" maxWidth="-Infinity"
+                            minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0"
+                            prefWidth="99.0" text="X 0">
+                        <font>
+                           <Font name="Algerian" size="25.0"/>
+                        </font>
+                     </Label>
+                  </HBox>
+               </VBox>
+            </AnchorPane>
+         </AnchorPane>
+         <AnchorPane fx:id="resourceAvailablePane" layoutX="-158.0" layoutY="108.0" maxHeight="-Infinity"
+                     maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="229.0"
+                     prefWidth="279.0">
+            <ImageView fx:id="resAvailableScrollImage" fitHeight="230.0" fitWidth="262.0" layoutX="6.0"
+                       layoutY="5.0" pickOnBounds="true">
+               <Image url="@../images/graphicstuff/scrollMenu.png"/>
+            </ImageView>
+            <AnchorPane fx:id="paneOnTheAvaResourceScroll" layoutX="18.0" layoutY="49.0" maxHeight="-Infinity"
+                        maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="138.0"
+                        prefWidth="246.0">
+               <VBox fx:id="availableResourcesVbox" prefHeight="135.0" prefWidth="246.0">
+                  <padding>
+                     <Insets left="35.0"/>
+                  </padding>
+                  <Label prefHeight="16.0" prefWidth="195.0" text="available resources:"
+                         textAlignment="CENTER">
+                     <font>
+                        <Font name="Algerian" size="14.0"/>
+                     </font>
+                     <padding>
+                        <Insets bottom="5.0"/>
+                     </padding>
+                  </Label>
+                  <HBox fx:id="firstAvaHbox" prefHeight="25.0" prefWidth="182.0" spacing="65.0">
+                     <ImageView fx:id="coinAvaImg" fitHeight="26.0" fitWidth="37.0"
+                                pickOnBounds="true" preserveRatio="true">
+                        <Image url="@../images/resourcesgame/coin.png"/>
+                     </ImageView>
+                     <Label fx:id="quantityCoinAvaLabel" maxHeight="-Infinity" maxWidth="-Infinity"
+                            minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0"
+                            prefWidth="55.0" text="X 0">
+                        <font>
+                           <Font name="Algerian" size="25.0"/>
+                        </font>
+                     </Label>
+                  </HBox>
+                  <HBox fx:id="secondAvaHbox" layoutX="10.0" layoutY="10.0" prefHeight="100.0"
+                        prefWidth="200.0" spacing="63.0">
+                     <ImageView fx:id="servantAvaImage" fitHeight="29.0" fitWidth="37.0"
+                                pickOnBounds="true" preserveRatio="true">
+                        <Image url="@../images/resourcesgame/servant.png"/>
+                     </ImageView>
+                     <Label fx:id="quantityServantAvaLabel" maxHeight="-Infinity" maxWidth="-Infinity"
+                            minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0"
+                            prefWidth="54.0" text="X 0">
+                        <font>
+                           <Font name="Algerian" size="25.0"/>
+                        </font>
+                     </Label>
+                  </HBox>
+                  <HBox fx:id="thirdAvaHbox" layoutX="10.0" layoutY="10.0" prefHeight="100.0"
+                        prefWidth="200.0" spacing="70.0">
+                     <ImageView fx:id="shieldAvaImg" fitHeight="31.0" fitWidth="31.0"
+                                pickOnBounds="true" preserveRatio="true">
+                        <Image url="@../images/resourcesgame/shield.png"/>
+                     </ImageView>
+                     <Label fx:id="quantityShieldAvaLabel" maxHeight="-Infinity" maxWidth="-Infinity"
+                            minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0"
+                            prefWidth="58.0" text="X 0">
+                        <font>
+                           <Font name="Algerian" size="25.0"/>
+                        </font>
+                     </Label>
+                  </HBox>
+                  <HBox fx:id="fourthAvaHbox" layoutX="10.0" layoutY="100.0" prefHeight="100.0"
+                        prefWidth="200.0" spacing="66.0">
+                     <ImageView fx:id="stoneAvaImg" fitHeight="28.0" fitWidth="32.0"
+                                pickOnBounds="true" preserveRatio="true">
+                        <Image url="@../images/resourcesgame/stone.png"/>
+                     </ImageView>
+                     <Label fx:id="quantityStoneAvaLabel" maxHeight="-Infinity" maxWidth="-Infinity"
+                            minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0"
+                            prefWidth="99.0" text="X 0">
+                        <font>
+                           <Font name="Algerian" size="25.0"/>
+                        </font>
+                     </Label>
+                  </HBox>
+               </VBox>
+            </AnchorPane>
+         </AnchorPane>
+         <Button fx:id="goBackButton" layoutX="705.0" layoutY="6.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                 minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0"
+                 prefWidth="31.0" text="X" textFill="#ff9901">
+            <font>
+               <Font name="Algerian" size="12.0"/>
+            </font>
+         </Button>
+      </AnchorPane>
+   </AnchorPane>
+</StackPane>

@@ -1,0 +1,109 @@
+[
+  {
+    "cost": [
+      {
+        "type": "SERVANT",
+        "counter": 4
+      }
+    ],
+    "victoryPoint": 5,
+    "inputResources": [
+      {
+        "type": "COIN",
+        "counter": 1
+      }
+    ],
+    "outputResources": [],
+    "outputFaithPoint": 2,
+    "colorLevel": "VIOLET2",
+    "state": false,
+    "imageURL": "/images/cards/developmentcards/developmentcard (18).png"
+  },
+  {
+    "cost": [
+      {
+        "type": "SERVANT",
+        "counter": 3
+      },
+      {
+        "type": "COIN",
+        "counter": 2
+      }
+    ],
+    "victoryPoint": 6,
+    "inputResources": [
+      {
+        "type": "COIN",
+        "counter": 1
+      },
+      {
+        "type": "SERVANT",
+        "counter": 1
+      }
+    ],
+    "outputResources": [
+      {
+        "type": "SHIELD",
+        "counter": 3
+      }
+    ],
+    "outputFaithPoint": 0,
+    "colorLevel": "VIOLET2",
+    "state": false,
+    "imageURL": "/images/cards/developmentcards/developmentcard (22).png"
+  },
+  {
+    "cost": [
+      {
+        "type": "SERVANT",
+        "counter": 5
+      }
+    ],
+    "victoryPoint": 7,
+    "inputResources": [
+      {
+        "type": "STONE",
+        "counter": 2
+      }
+    ],
+    "outputResources": [
+      {
+        "type": "COIN",
+        "counter": 2
+      }
+    ],
+    "outputFaithPoint": 2,
+    "colorLevel": "VIOLET2",
+    "state": false,
+    "imageURL": "/images/cards/developmentcards/developmentcard (26).png"
+  },
+  {
+    "cost": [
+      {
+        "type": "SERVANT",
+        "counter": 3
+      },
+      {
+        "type": "SHIELD",
+        "counter": 3
+      }
+    ],
+    "victoryPoint": 8,
+    "inputResources": [
+      {
+        "type": "STONE",
+        "counter": 1
+      }
+    ],
+    "outputResources": [
+      {
+        "type": "SERVANT",
+        "counter": 2
+      }
+    ],
+    "outputFaithPoint": 1,
+    "colorLevel": "VIOLET2",
+    "state": false,
+    "imageURL": "/images/cards/developmentcards/developmentcard (30).png"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "cost": [
+      {
+        "type": "SERVANT",
+        "counter": 6
+      }
+    ],
+    "victoryPoint": 9,
+    "inputResources": [
+      {
+        "type": "STONE",
+        "counter": 2
+      }
+    ],
+    "outputResources": [
+      {
+        "type": "COIN",
+        "counter": 3
+      }
+    ],
+    "outputFaithPoint": 2,
+    "colorLevel": "VIOLET3",
+    "state": false,
+    "imageURL": "/images/cards/developmentcards/developmentcard (34).png"
+  },
+  {
+    "cost": [
+      {
+        "type": "SERVANT",
+        "counter": 5
+      },
+      {
+        "type": "COIN",
+        "counter": 2
+      }
+    ],
+    "victoryPoint": 10,
+    "inputResources": [
+      {
+        "type": "STONE",
+        "counter": 1
+      },
+      {
+        "type": "SHIELD",
+        "counter": 1
+      }
+    ],
+    "outputResources": [
+      {
+        "type": "COIN",
+        "counter": 3
+      },
+      {
+        "type": "SERVANT",
+        "counter": 3
+      }
+    ],
+    "outputFaithPoint": 1,
+    "colorLevel": "VIOLET3",
+    "state": false,
+    "imageURL": "/images/cards/developmentcards/developmentcard (38).png"
+  },
+  {
+    "cost": [
+      {
+        "type": "SERVANT",
+        "counter": 7
+      }
+    ],
+    "victoryPoint": 11,
+    "inputResources": [
+      {
+        "type": "COIN",
+        "counter": 1
+      }
+    ],
+    "outputResources": [
+      {
+        "type": "STONE",
+        "counter": 1
+      }
+    ],
+    "outputFaithPoint": 3,
+    "colorLevel": "VIOLET3",
+    "state": false,
+    "imageURL": "/images/cards/developmentcards/developmentcard (42).png"
+  },
+  {
+    "cost": [
+      {
+        "type": "SERVANT",
+        "counter": 3
+      },
+      {
+        "type": "SHIELD",
+        "counter": 3
+      }
+    ],
+    "victoryPoint": 12,
+    "inputResources": [
+      {
+        "type": "COIN",
+        "counter": 1
+      }
+    ],
+    "outputResources": [
+      {
+        "type": "STONE",
+        "counter": 3
+      },
+      {
+        "type": "SERVANT",
+        "counter": 1
+      }
+    ],
+    "outputFaithPoint": 0,
+    "colorLevel": "VIOLET3",
+    "state": false,
+    "imageURL": "/images/cards/developmentcards/developmentcard (46).png"
+  }
+]

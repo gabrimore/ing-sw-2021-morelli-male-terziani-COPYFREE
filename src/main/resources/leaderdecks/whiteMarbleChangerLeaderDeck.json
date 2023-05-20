@@ -1,0 +1,54 @@
+[
+  {
+    "outputResource": "SERVANT",
+    "victoryPoint": 4,
+    "requirement": {
+      "colorLevelRequirement": [
+        "YELLOW1",
+        "YELLOW1",
+        "BLUE1"
+      ]
+    },
+    "state": false,
+    "imageURL": "/images/cards/leadercards/leader9.png"
+  },
+  {
+    "outputResource": "SHIELD",
+    "victoryPoint": 4,
+    "requirement": {
+      "colorLevelRequirement": [
+        "GREEN1",
+        "GREEN1",
+        "VIOLET1"
+      ]
+    },
+    "state": false,
+    "imageURL": "/images/cards/leadercards/leader10.png"
+  },
+  {
+    "outputResource": "STONE",
+    "victoryPoint": 4,
+    "requirement": {
+      "colorLevelRequirement": [
+        "BLUE1",
+        "BLUE1",
+        "YELLOW1"
+      ]
+    },
+    "state": false,
+    "imageURL": "/images/cards/leadercards/leader11.png"
+  },
+  {
+    "outputResource": "COIN",
+    "victoryPoint": 4,
+    "requirement": {
+      "colorLevelRequirement": [
+        "VIOLET1",
+        "VIOLET1",
+        "GREEN1"
+      ]
+    },
+    "state": false,
+    "imageURL": "/images/cards/leadercards/leader12.png"
+  }
+]

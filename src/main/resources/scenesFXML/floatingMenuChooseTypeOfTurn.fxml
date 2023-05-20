@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="floatingMenuPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+           minWidth="-Infinity" prefHeight="789.0" prefWidth="1536.0" xmlns="http://javafx.com/javafx/16"
+           xmlns:fx="http://javafx.com/fxml/1">
+   <ImageView fx:id="backgroundBlur" fitHeight="824.0" fitWidth="1536.0" opacity="0.8" pickOnBounds="true">
+      <Image url="@../images/graphicstuff/grey.png"/>
+   </ImageView>
+   <AnchorPane fx:id="scrollPane" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="559.0"
+               prefWidth="832.0">
+      <ImageView fx:id="scrollImage" fitHeight="559.0" fitWidth="832.0" pickOnBounds="true">
+         <Image url="@../images/graphicstuff/scrollMenu.png"/>
+      </ImageView>
+      <AnchorPane fx:id="paneOnTheScroll" layoutX="41.0" layoutY="80.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                  minHeight="-Infinity" minWidth="-Infinity" prefHeight="386.0" prefWidth="746.0">
+         <VBox layoutX="56.0" layoutY="39.0" prefHeight="316.0" prefWidth="624.0" spacing="10.0">
+            <Label fx:id="titleLabel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                   minWidth="-Infinity" prefHeight="50.0" prefWidth="606.0"
+                   text="choose the turn you want to do:" textAlignment="CENTER">
+               <font>
+                  <Font name="Algerian" size="36.0"/>
+               </font>
+            </Label>
+            <Button fx:id="takeResButton" mnemonicParsing="false" prefHeight="52.0" prefWidth="434.0"
+                    text="1. Take resources from market" textFill="#ff9901">
+               <font>
+                  <Font name="Algerian" size="16.0"/>
+               </font>
+               <VBox.margin>
+                  <Insets left="80.0"/>
+               </VBox.margin>
+            </Button>
+            <Button fx:id="activeLeaderButton" layoutX="10.0" layoutY="282.0" mnemonicParsing="false"
+                    prefHeight="52.0" prefWidth="434.0" text="2. Activate/Discard leader card" textFill="#ff9901">
+               <font>
+                  <Font name="Algerian" size="16.0"/>
+               </font>
+               <VBox.margin>
+                  <Insets left="80.0"/>
+               </VBox.margin>
+            </Button>
+            <Button fx:id="buyDevCard" layoutX="10.0" layoutY="291.0" mnemonicParsing="false"
+                    prefHeight="52.0" prefWidth="434.0" text="3. Buy a development card" textFill="#ff9901">
+               <font>
+                  <Font name="Algerian" size="16.0"/>
+               </font>
+               <VBox.margin>
+                  <Insets left="80.0"/>
+               </VBox.margin>
+            </Button>
+            <Button fx:id="activateProduction" layoutX="10.0" layoutY="293.0" mnemonicParsing="false"
+                    prefHeight="52.0" prefWidth="434.0" text="4. Activate production" textFill="#ff9901">
+               <font>
+                  <Font name="Algerian" size="16.0"/>
+               </font>
+               <VBox.margin>
+                  <Insets left="80.0"/>
+               </VBox.margin>
+            </Button>
+            <Button fx:id="showGameBoard" layoutX="10.0" layoutY="282.0" mnemonicParsing="false"
+                    prefHeight="52.0" prefWidth="434.0" text="5. Show Game Board" textFill="#ff9901">
+               <font>
+                  <Font name="Algerian" size="16.0"/>
+               </font>
+               <VBox.margin>
+                  <Insets left="80.0"/>
+               </VBox.margin>
+            </Button>
+         </VBox>
+      </AnchorPane>
+   </AnchorPane>
+</StackPane>

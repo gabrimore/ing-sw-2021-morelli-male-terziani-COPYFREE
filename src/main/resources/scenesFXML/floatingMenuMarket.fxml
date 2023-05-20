@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="floatingMenuPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+           minWidth="-Infinity" prefHeight="789.0" prefWidth="1536.0" xmlns="http://javafx.com/javafx/16"
+           xmlns:fx="http://javafx.com/fxml/1">
+   <ImageView fx:id="backgroundBlur" fitHeight="824.0" fitWidth="1536.0" opacity="0.8" pickOnBounds="true">
+      <Image url="@../images/graphicstuff/grey.png"/>
+   </ImageView>
+   <AnchorPane fx:id="scrollPane" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="559.0"
+               prefWidth="832.0">
+      <ImageView fx:id="scrollImage" fitHeight="559.0" fitWidth="832.0" pickOnBounds="true">
+         <Image url="@../images/graphicstuff/scrollMenu.png"/>
+      </ImageView>
+      <AnchorPane fx:id="paneOnTheScroll" layoutX="41.0" layoutY="80.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                  minHeight="-Infinity" minWidth="-Infinity" prefHeight="386.0" prefWidth="746.0">
+         <AnchorPane fx:id="marketPane" layoutX="39.0" layoutY="58.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                     minHeight="-Infinity" minWidth="-Infinity" prefHeight="288.0" prefWidth="333.0">
+            <effect>
+               <InnerShadow height="51.98" radius="26.085" width="54.36"/>
+            </effect>
+            <ImageView fx:id="backBround" fitHeight="224.0" fitWidth="264.0" layoutX="37.0" layoutY="31.0"
+                       pickOnBounds="true" preserveRatio="true">
+               <Image url="@../images/graphicstuff/marketboardbackground.png"/>
+            </ImageView>
+            <ImageView fx:id="marketImage" fitHeight="288.0" fitWidth="333.0" layoutX="2.0" pickOnBounds="true"
+                       preserveRatio="true">
+               <Image url="@../images/graphicstuff/marketSpace.png"/>
+            </ImageView>
+            <StackPane fx:id="row1Pane" layoutX="286.0" layoutY="86.0" maxHeight="-Infinity"
+                       maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="39.0"
+                       prefWidth="46.0">
+               <Button fx:id="row1Button" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                       minWidth="-Infinity" mnemonicParsing="false" prefHeight="42.0" prefWidth="41.0"
+                       style="-fx-background-color: transparent;">
+                  <graphic>
+                     <Rectangle fx:id="row1Img" arcHeight="5.0" arcWidth="5.0" fill="#ffffc2" height="40.0"
+                                opacity="0.3" stroke="BLACK" strokeType="INSIDE" width="40.0"/>
+                  </graphic>
+                  <effect>
+                     <GaussianBlur radius="8.2"/>
+                  </effect>
+               </Button>
+            </StackPane>
+            <StackPane fx:id="row2Pane" layoutX="286.0" layoutY="126.0" maxHeight="-Infinity"
+                       maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="39.0"
+                       prefWidth="46.0">
+               <Button fx:id="row2Button" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                       minWidth="-Infinity" mnemonicParsing="false" prefHeight="42.0" prefWidth="41.0"
+                       style="-fx-background-color: transparent;">
+                  <graphic>
+                     <Rectangle fx:id="row2Img" arcHeight="5.0" arcWidth="5.0" fill="#ffffc2" height="40.0"
+                                opacity="0.3" stroke="BLACK" strokeType="INSIDE" width="40.0"/>
+                  </graphic>
+                  <effect>
+                     <GaussianBlur radius="8.2"/>
+                  </effect>
+               </Button>
+            </StackPane>
+            <StackPane fx:id="row3Pane" layoutX="286.0" layoutY="168.0" maxHeight="-Infinity"
+                       maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="39.0"
+                       prefWidth="46.0">
+               <Button fx:id="row3Button" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                       minWidth="-Infinity" mnemonicParsing="false" prefHeight="42.0" prefWidth="41.0"
+                       style="-fx-background-color: transparent;">
+                  <graphic>
+                     <Rectangle fx:id="row3Img" arcHeight="5.0" arcWidth="5.0" fill="#ffffc2" height="40.0"
+                                opacity="0.3" stroke="BLACK" strokeType="INSIDE" width="40.0"/>
+                  </graphic>
+                  <effect>
+                     <GaussianBlur radius="8.2"/>
+                  </effect>
+               </Button>
+            </StackPane>
+            <StackPane fx:id="col1Pane" layoutX="94.0" layoutY="245.0" maxHeight="-Infinity"
+                       maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="42.0"
+                       prefWidth="39.0">
+               <Button fx:id="col1Button" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                       minWidth="-Infinity" mnemonicParsing="false" prefHeight="42.0" prefWidth="41.0"
+                       style="-fx-background-color: transparent;">
+                  <graphic>
+                     <Rectangle fx:id="col1Img" arcHeight="5.0" arcWidth="5.0" fill="#ffffc2" height="40.0"
+                                opacity="0.3" stroke="BLACK" strokeType="INSIDE" width="40.0"/>
+                  </graphic>
+                  <effect>
+                     <GaussianBlur radius="8.2"/>
+                  </effect>
+               </Button>
+            </StackPane>
+            <StackPane fx:id="col2Pane" layoutX="134.0" layoutY="245.0" maxHeight="-Infinity"
+                       maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="42.0"
+                       prefWidth="39.0">
+               <Button fx:id="col2Button" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                       minWidth="-Infinity" mnemonicParsing="false" prefHeight="42.0" prefWidth="41.0"
+                       style="-fx-background-color: transparent;">
+                  <graphic>
+                     <Rectangle fx:id="col2Img" arcHeight="5.0" arcWidth="5.0" fill="#ffffc2" height="40.0"
+                                opacity="0.3" stroke="BLACK" strokeType="INSIDE" width="40.0"/>
+                  </graphic>
+                  <effect>
+                     <GaussianBlur radius="8.2"/>
+                  </effect>
+               </Button>
+            </StackPane>
+            <StackPane fx:id="col3Pane" layoutX="174.0" layoutY="245.0" maxHeight="-Infinity"
+                       maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="42.0"
+                       prefWidth="39.0">
+               <Button fx:id="col3Button" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                       minWidth="-Infinity" mnemonicParsing="false" prefHeight="42.0" prefWidth="41.0"
+                       style="-fx-background-color: transparent;">
+                  <graphic>
+                     <Rectangle fx:id="col3Img" arcHeight="5.0" arcWidth="5.0" fill="#ffffc2"
+                                height="40.0" opacity="0.3" stroke="BLACK" strokeType="INSIDE"
+                                width="40.0"/>
+                  </graphic>
+                  <effect>
+                     <GaussianBlur radius="8.2"/>
+                  </effect>
+               </Button>
+            </StackPane>
+            <StackPane fx:id="col4Pane" layoutX="214.0" layoutY="245.0" maxHeight="-Infinity"
+                       maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="42.0"
+                       prefWidth="39.0">
+               <Button fx:id="col4Button" maxHeight="-Infinity" maxWidth="-Infinity"
+                       minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="42.0"
+                       prefWidth="41.0" style="-fx-background-color: transparent;">
+                  <graphic>
+                     <Rectangle fx:id="col4Img" arcHeight="5.0" arcWidth="5.0" fill="#ffffc2"
+                                height="40.0" opacity="0.3" stroke="BLACK" strokeType="INSIDE"
+                                width="40.0"/>
+                  </graphic>
+                  <effect>
+                     <GaussianBlur radius="8.2"/>
+                  </effect>
+               </Button>
+            </StackPane>
+            <ImageView fx:id="extraMarbleImg" fitHeight="50.0" fitWidth="44.0" layoutX="242.0"
+                       layoutY="46.0" pickOnBounds="true" preserveRatio="true">
+               <effect>
+                  <InnerShadow/>
+               </effect>
+            </ImageView>
+         </AnchorPane>
+         <Label fx:id="chooseRCLabel" layoutX="410.0" layoutY="58.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                minHeight="-Infinity" minWidth="-Infinity" prefHeight="114.0" prefWidth="304.0"
+                text="Choose a ROW or a COLUMN">
+            <font>
+               <Font name="Algerian" size="20.0"/>
+            </font>
+         </Label>
+         <AnchorPane fx:id="leggendaPane" layoutX="441.0" layoutY="275.0" maxHeight="-Infinity"
+                     maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="70.0"
+                     prefWidth="242.0">
+            <ImageView fx:id="leggendaImage" fitHeight="74.0" fitWidth="239.0" layoutX="2.0"
+                       pickOnBounds="true" preserveRatio="true">
+               <effect>
+                  <InnerShadow height="32.92" radius="15.96" width="32.92"/>
+               </effect>
+               <Image url="@../images/graphicstuff/legendabiglie_ritaglio.png"/>
+            </ImageView>
+         </AnchorPane>
+         <GridPane layoutX="126.0" layoutY="138.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                   minHeight="-Infinity" minWidth="-Infinity" prefHeight="130.0" prefWidth="165.0">
+            <columnConstraints>
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+            </columnConstraints>
+            <rowConstraints>
+               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+            </rowConstraints>
+            <ImageView fx:id="image00" fitHeight="50.0" fitWidth="44.0" pickOnBounds="true"
+                       preserveRatio="true">
+               <effect>
+                  <InnerShadow/>
+               </effect>
+
+            </ImageView>
+            <ImageView fx:id="image10" fitHeight="50.0" fitWidth="44.0" layoutX="10.0" layoutY="8.0"
+                       pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+               <effect>
+                  <InnerShadow/>
+               </effect>
+
+            </ImageView>
+            <ImageView fx:id="image20" fitHeight="50.0" fitWidth="44.0" layoutX="10.0" layoutY="8.0"
+                       pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2">
+               <effect>
+                  <InnerShadow/>
+               </effect>
+
+            </ImageView>
+            <ImageView fx:id="image01" fitHeight="50.0" fitWidth="44.0" layoutX="10.0" layoutY="8.0"
+                       pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+               <effect>
+                  <InnerShadow/>
+               </effect>
+
+            </ImageView>
+            <ImageView fx:id="image11" fitHeight="50.0" fitWidth="44.0" layoutX="10.0" layoutY="8.0"
+                       pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <effect>
+                  <InnerShadow/>
+               </effect>
+
+            </ImageView>
+            <ImageView fx:id="image21" fitHeight="50.0" fitWidth="44.0" layoutX="10.0" layoutY="8.0"
+                       pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <effect>
+                  <InnerShadow/>
+               </effect>
+
+            </ImageView>
+            <ImageView fx:id="image02" fitHeight="50.0" fitWidth="44.0" layoutX="10.0" layoutY="8.0"
+                       pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
+               <effect>
+                  <InnerShadow/>
+               </effect>
+
+            </ImageView>
+            <ImageView fx:id="image12" fitHeight="50.0" fitWidth="44.0" layoutX="10.0" layoutY="8.0"
+                       pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <effect>
+                  <InnerShadow/>
+               </effect>
+
+            </ImageView>
+            <ImageView fx:id="image22" fitHeight="50.0" fitWidth="44.0" layoutX="10.0" layoutY="8.0"
+                       pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <effect>
+                  <InnerShadow/>
+               </effect>
+
+            </ImageView>
+            <ImageView fx:id="image03" fitHeight="50.0" fitWidth="44.0" layoutX="20.0" layoutY="18.0"
+                       pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3">
+               <effect>
+                  <InnerShadow/>
+               </effect>
+
+            </ImageView>
+            <ImageView fx:id="image13" fitHeight="50.0" fitWidth="44.0" layoutX="10.0" layoutY="8.0"
+                       pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <effect>
+                  <InnerShadow/>
+               </effect>
+
+            </ImageView>
+            <ImageView fx:id="image23" fitHeight="50.0" fitWidth="44.0" layoutX="30.0" layoutY="28.0"
+                       pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <effect>
+                  <InnerShadow/>
+               </effect>
+
+            </ImageView>
+         </GridPane>
+         <Button fx:id="goBackButton" layoutX="700.0" layoutY="14.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                 minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0"
+                 prefWidth="31.0" text="X" textFill="#ff9901">
+            <font>
+               <Font name="Algerian" size="13.0"/>
+            </font>
+         </Button>
+      </AnchorPane>
+   </AnchorPane>
+</StackPane>

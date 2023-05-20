@@ -1,0 +1,22 @@
+[
+  {
+    "imageURL": "/images/cards/tokens/cerchio2.png",
+    "color": "GREEN",
+    "level": 0
+  },
+  {
+    "imageURL": "/images/cards/tokens/cerchio3.png",
+    "color": "VIOLET",
+    "level": 0
+  },
+  {
+    "imageURL": "/images/cards/tokens/cerchio1.png",
+    "color": "BLUE",
+    "level": 0
+  },
+  {
+    "imageURL": "/images/cards/tokens/cerchio4.png",
+    "color": "YELLOW",
+    "level": 0
+  }
+]

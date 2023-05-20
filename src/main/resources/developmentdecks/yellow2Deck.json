@@ -1,0 +1,109 @@
+[
+  {
+    "cost": [
+      {
+        "type": "STONE",
+        "counter": 4
+      }
+    ],
+    "victoryPoint": 5,
+    "inputResources": [
+      {
+        "type": "SHIELD",
+        "counter": 1
+      }
+    ],
+    "outputResources": [],
+    "outputFaithPoint": 2,
+    "colorLevel": "YELLOW2",
+    "state": false,
+    "imageURL": "/images/cards/developmentcards/developmentcard (20).png"
+  },
+  {
+    "cost": [
+      {
+        "type": "STONE",
+        "counter": 3
+      },
+      {
+        "type": "SHIELD",
+        "counter": 2
+      }
+    ],
+    "victoryPoint": 6,
+    "inputResources": [
+      {
+        "type": "STONE",
+        "counter": 1
+      },
+      {
+        "type": "SHIELD",
+        "counter": 1
+      }
+    ],
+    "outputResources": [
+      {
+        "type": "COIN",
+        "counter": 3
+      }
+    ],
+    "outputFaithPoint": 0,
+    "colorLevel": "YELLOW2",
+    "state": false,
+    "imageURL": "/images/cards/developmentcards/developmentcard (24).png"
+  },
+  {
+    "cost": [
+      {
+        "type": "STONE",
+        "counter": 5
+      }
+    ],
+    "victoryPoint": 7,
+    "inputResources": [
+      {
+        "type": "SHIELD",
+        "counter": 2
+      }
+    ],
+    "outputResources": [
+      {
+        "type": "SERVANT",
+        "counter": 2
+      }
+    ],
+    "outputFaithPoint": 2,
+    "colorLevel": "YELLOW2",
+    "state": false,
+    "imageURL": "/images/cards/developmentcards/developmentcard (28).png"
+  },
+  {
+    "cost": [
+      {
+        "type": "STONE",
+        "counter": 3
+      },
+      {
+        "type": "SERVANT",
+        "counter": 3
+      }
+    ],
+    "victoryPoint": 8,
+    "inputResources": [
+      {
+        "type": "SHIELD",
+        "counter": 1
+      }
+    ],
+    "outputResources": [
+      {
+        "type": "COIN",
+        "counter": 2
+      }
+    ],
+    "outputFaithPoint": 1,
+    "colorLevel": "YELLOW2",
+    "state": false,
+    "imageURL": "/images/cards/developmentcards/developmentcard (32).png"
+  }
+]
